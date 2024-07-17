@@ -212,7 +212,8 @@ spec:
       containers:
         - name: scheduler-framework
           #image: docker.io/prodan/scheduler-framework:latest
-          image: docker.m.daocloud.io/prodan/scheduler-framework:latest
+          #image: docker.m.daocloud.io/prodan/scheduler-framework:latest
+          image: docker.m.daocloud.io/scheduler-framework:latest
           imagePullPolicy: IfNotPresent
           command:
             - app
