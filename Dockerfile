@@ -1,5 +1,5 @@
 FROM debian:stretch-slim
-#WORKDIR /
+WORKDIR /
 #WORKDIR /app
 COPY app /usr/local/bin
 #COPY . /app
