@@ -213,7 +213,8 @@ spec:
         - name: scheduler-framework
           #image: docker.io/prodan/scheduler-framework:latest
           #image: docker.m.daocloud.io/prodan/scheduler-framework:latest
-          image: docker.m.daocloud.io/scheduler-framework:latest
+          #image: docker.m.daocloud.io/scheduler-framework:latest
+          image: registry.cn-hangzhou.aliyuncs.com/littlebj/my-k8s:1.0
           imagePullPolicy: IfNotPresent
           command:
             - app
@@ -222,7 +223,7 @@ spec:
           env:
             - name: CPU_THRESHOLD
               value: "0.85"
-            - name: MEN_THRESHOLD
+            - name: MEM_THRESHOLD
               value: "0.85"
           resources:
             limits:
