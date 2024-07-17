@@ -211,7 +211,8 @@ spec:
             name: kube-scheduler-kubeconfig
       containers:
         - name: scheduler-framework
-          image: docker.io/prodan/scheduler-framework:latest
+          #image: docker.io/prodan/scheduler-framework:latest
+          image: docker.m.daocloud.io/prodan/scheduler-framework:latest
           imagePullPolicy: IfNotPresent
           command:
             - app
